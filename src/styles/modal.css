@@ -1,0 +1,303 @@
+.urls-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #BFFCFF;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-inline: auto;
+	 background-color: #D3F6F8;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-top: -10px;
+    /* margin-top: 30px;
+    margin-bottom: 20px; */
+}
+
+.logo {
+    max-width: 100%;
+    width: 85%;
+    height: 85%;
+}
+
+.carousel, .carousel-content {
+    margin-top: -15px;
+    max-width: 80%;
+    align-items: center;
+    font-weight: 550;
+    font-size: x-large;
+}
+
+.url-shortener-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #000;
+    border-radius: 25px;
+    background-color: #D3F6F8;
+    padding: 2rem;
+    margin: .5rem 3rem;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: -5px 10px 10px rgba(93, 121, 122, 0.5);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.input-container input {
+    width: 80%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: large;
+    padding: 0 1rem;
+}
+
+.output-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 0px;
+}
+
+.output-container input {
+    box-sizing: border-box;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    padding: 0 1rem;
+}
+
+.shorten-button {
+    width: 150px;
+    height: 35px;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    margin-top: -10px;
+    margin-left: 1rem;
+    background-color: #7FD3FA;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-button{
+    /* margin-top: 10px; */
+}
+
+.shorten-button:hover {
+    background-color: #4db0df;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    background-color: white;
+    margin-left: none;
+    justify-content: center;
+}
+
+.qr-icon, .copy-icon {
+    height: 20px;
+    width: 20px;
+    margin: 0.5rem;
+}
+
+.login-icon {
+    margin-left: auto;
+    padding-top: 20px;
+}
+
+.loginicon {
+    width: 70px;
+    height: 70px;
+}
+
+.btn-primary {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 49, 49, 0.8);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.shorten-button{
+margin-left: 20px;
+margin-top: 20px;
+margin-right: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.download-btn {
+    margin-top: 20px;
+}
+
+.download-btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .url-shortener-container {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+        box-shadow: -2px 5px 5px rgba(93, 121, 122, 0.5);
+    }
+
+    .input-container{
+        width: 100%;
+        margin-left: -20px;
+        margin-top:auto;
+    }
+
+    .output-container{
+        width: 86%;
+        margin-top:auto;
+    }
+
+    .shorten-button {
+        width:80%;
+        margin-left: 10px;
+        margin-top: 10px;
+       
+    }
+
+    .login-icon {
+        margin-left: 108px;
+    }
+
+     #file{
+       margin-top:10px;
+       margin-left:30px;
+    }
+
+    .btn-primary {
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
+        padding: 1rem;
+    }
+
+    .close {
+        top: 5px;
+        right: 5px;
+        font-size: 1.25rem;
+    }
+
+    .download-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .url-shortener-container {
+        width: 70%;
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .output-container input {
+        width: 70%;
+        font-size: large;
+    }
+
+    .shorten-button {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .icons {
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    .qr-icon, .copy-icon {
+        margin-left: 5px;
+    }
+
+    .login-icon {
+        margin-left: 600px;
+    }
+}

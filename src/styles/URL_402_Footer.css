@@ -1,0 +1,223 @@
+
+
+.footer {
+  margin-top: 30px;
+  background-color: whitesmoke;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: black solid 1px;
+  width: 100%;
+  height: 217px;
+}
+
+.footer-left {
+  display: flex;
+  margin-top: -50px;
+  margin-left: 50px;
+  margin-right: 80px;
+}
+
+#logogreen {
+  height: 100px;
+  width: 100px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.footer-links {
+  color: black;
+  margin-top: 20px;
+  margin-right: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: -7px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* .heading:hover {
+  color: #007bff;
+} */
+
+.footer-links ul {
+  padding: 0;
+  margin-left: 0px;
+  font-style: bold;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.50rem;
+  
+}
+
+.footer-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #007bff;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.list-unstyled {
+  width: 150px;
+  font-weight: 300;
+}
+
+.footer-right {
+  margin-top: 0px;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.footer-right p {
+  font-family: "Eastman Grotesque", sans-serif;
+  font-weight: 550;
+}
+.footer-right p #company-name {
+  font-weight: 550;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer-right img {
+  max-width: 70px;
+  max-height: 70px;
+  margin-bottom: none;
+  margin-top: 10px;
+  padding: none;
+}
+
+#company-name {
+  font-family: "Eastman Grotesque", sans-serif;
+  font-size: 32px;
+}
+
+.fourN {
+  color: #039be5;
+}
+
+.eco {
+  color: #00bf63;
+  letter-spacing: -1px;
+}
+
+.tech {
+  color: #039be5;
+  letter-spacing: -2px;
+  margin-left: -5px;
+}
+.copyright {
+  position: absolute;
+  margin-top: 0;
+  margin-right: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .footer-links {
+    margin-left: -20px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-right img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  #company-name {
+    font-size: 24px;
+  }
+
+  #logogreen {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .footer-links {
+    margin-right: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-link {
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-right img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  #company-name {
+    font-size: 25px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  #logogreen {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+}
